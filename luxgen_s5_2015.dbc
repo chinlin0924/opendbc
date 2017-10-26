@@ -144,6 +144,7 @@ BO_ 1120 NEW_MSG_5: 8 XXX
 CM_ SG_ 1104 DRIVER_SEAT_BELT_ONOFF "0 - on , 1 = off";
 CM_ SG_ 1056 _DOOR_RL_STATUS "04 - RL - open";
 CM_ SG_ 1056 _DOOR_FL_STATUS "28 - FL open , 38 - FR";
+CM_ SG_ 1056 RIGHT_SIGNAL_STATUS "R,L shows at same time means hazard";
 CM_ SG_ 832 TRANS_MODE "AT - 85 / MT - 8D";
 CM_ SG_ 832 TRANS_GEAR_POS "R-7 , 0 - N";
 CM_ SG_ 821 CRUSE_ONOFF "定速開關（但未啟動)";
