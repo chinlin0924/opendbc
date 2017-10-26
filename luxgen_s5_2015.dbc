@@ -55,7 +55,7 @@ BO_ 832 GEAR_RPM_SPEED_STATUS: 8 XXX
  SG_ TRANS_MODE : 8|8@1+ (1,0) [0|0] "" XXX
  SG_ TRANS_GEAR_POS : 0|3@1+ (1,0) [0|1] "" XXX
  SG_ ENGINE_RPM1 : 55|8@0+ (1,0) [0|255] "" XXX
- SG_ ENGINE_TEMP : 63|8@0+ (1,0) [0|255] "KM" XXX
+ SG_ _ENGINE_TEMP : 63|8@0+ (1,0) [0|255] "KM" XXX
 
 BO_ 821 THROTTLE_STATUS: 8 XXX
  SG_ CRUSE_ONOFF : 2|1@0+ (1,0) [0|1] "on/off" XXX
@@ -90,7 +90,7 @@ BO_ 1306 _SPEEDX: 8 XXX
 
 BO_ 1296 NEW_MSG_2: 8 XXX
 
-BO_ 790 NEW_MSG_3: 8 XXX
+BO_ 790 ENGINE_DATA: 8 XXX
  SG_ _X2 : 6|1@0+ (1,0) [0|1] "" XXX
  SG_ NEW_SIGNAL_1 : 15|8@0+ (1,0) [0|255] "" XXX
  SG_ NEW_SIGNAL_2 : 23|8@0+ (1,0) [0|255] "" XXX
@@ -113,6 +113,7 @@ BO_ 864 _speedsxxx: 8 XXX
  SG_ _SPEED3 : 24|8@1+ (1,0) [0|255] "" XXX
  SG_ TCS_ON_FF : 45|1@0+ (1,0) [0|1] "" XXX
  SG_ XXXX1 : 63|8@0+ (1,0) [0|255] "" XXX
+ SG_ BRAKE_PRSSED : 42|1@0+ (1,0) [0|1] "" XXX
 
 BO_ 842 _NOCARE01: 8 XXX
 
@@ -130,6 +131,12 @@ BO_ 1040 NEW_MSG_1: 8 XXX
  SG_ YELLOW_WARN_TEMP_TRIGGER : 5|1@0+ (1,0) [0|1] "" XXX
  SG_ HID_LIGHT_HANDLE_SWITCH : 6|1@0+ (1,0) [0|1] "" XXX
  SG_ _MIX_MODE : 7|1@0+ (1,0) [0|1] "" XXX
+ SG_ slider_rain_bar : 13|1@0+ (1,0) [0|1] "" XXX
+ SG_ temp_slider_rain_bar : 15|1@0+ (1,0) [0|1] "" XXX
+ SG_ temp_water_push : 11|1@0+ (1,0) [0|1] "" XXX
+
+BO_ 1120 NEW_MSG_5: 8 XXX
+ SG_ HAVC_TEMP : 32|8@1+ (1,0) [0|255] "" XXX
 
 
 
