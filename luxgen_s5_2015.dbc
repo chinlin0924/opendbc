@@ -86,8 +86,7 @@ BO_ 1402 DASH_STATUS: 8 XXX
  SG_ _DASH_INFO_3 : 31|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 1306 _SPEEDX: 8 XXX
- SG_ _XX1 : 15|1@0+ (1,0) [0|1] "" XXX
- SG_ _GSPEED1 : 0|8@1+ (1,0) [0|255] "" XXX
+ SG_ DASH_CAR_SPEED : 7|9@0+ (1,0) [0|255] "" XXX
 
 BO_ 1296 undefined: 8 XXX
 
