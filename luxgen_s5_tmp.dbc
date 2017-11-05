@@ -79,7 +79,10 @@ BO_ 848 ABS_WHEELS_STATUS: 8 XXX
 
 BO_ 1402 DASH_STATUS: 8 XXX
  SG_ CAR_SPEED : 32|8@1+ (1,0) [0|255] "" XXX
- SG_ ENG_FUEL : 7|8@0+ (1,0) [0|1] "" XXX
+ SG_ _DASH_INFO2 : 16|8@1+ (1,0) [0|255] "" XXX
+ SG_ _DASH_INFO0 : 0|8@1+ (1,0) [0|255] "" XXX
+ SG_ _DASH_INFO_2 : 15|8@0+ (1,0) [0|255] "" XXX
+ SG_ _DASH_INFO_3 : 31|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 1306 _SPEEDX: 8 XXX
  SG_ _XX1 : 15|1@0+ (1,0) [0|1] "" XXX
@@ -88,12 +91,10 @@ BO_ 1306 _SPEEDX: 8 XXX
 BO_ 1296 undefined: 8 XXX
 
 BO_ 790 ENGINE_DATA: 8 XXX
- SG_ _X2 : 6|1@0+ (1,0) [0|1] "" XXX
- SG_ ENG_RPM : 23|16@0+ (0.1,0) [0|65535] "" XXX
- SG_ ENG_TEMP : 56|7@1+ (1,0) [0|3] "" XXX
+ SG_ ENG_TEMP : 56|2@1+ (1,0) [0|3] "" XXX
+ SG_ ENG_RPM : 7|8@0+ (0.1,0) [0|65535] "" XXX
 
 BO_ 1313 undefined: 8 XXX
- SG_ GAS_FUEL : 1|6@1+ (1,0) [0|63] "" XXX
 
 BO_ 1312 __trigger_every_range: 8 XXX
  SG_ __SIGNAL_every_interval : 4|1@0+ (1,0) [0|1] "" XXX
@@ -101,14 +102,15 @@ BO_ 1312 __trigger_every_range: 8 XXX
 BO_ 896 undefined: 8 XXX
  SG_ NEW_SIGNAL_1 : 32|4@1+ (1,0) [0|15] "" XXX
 
-BO_ 809 undefined: 8 XXX
- SG_ SHOW_ON_OFF_RAN : 40|8@1+ (1,0) [0|255] "" XXX
+BO_ 809 ENGINE_WATER: 8 XXX
+ SG_ WATER_TEMP : 15|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 864 BREAK_TCS_STATUS: 8 XXX
  SG_ _SPEED3 : 24|8@1+ (1,0) [0|255] "" XXX
  SG_ TCS_ON_FF : 45|1@0+ (1,0) [0|1] "" XXX
  SG_ XXXX1 : 63|8@0+ (1,0) [0|255] "" XXX
  SG_ BRAKE_PRSSED : 42|1@0+ (1,0) [0|1] "" XXX
+ SG_ DASH_ENG_RPM : 7|8@0+ (1,0) [0|255] "" XXX
 
 BO_ 842 undefined: 8 XXX
 
@@ -148,5 +150,4 @@ CM_ SG_ 821 THROTTLE_PEDAL_POS "踏板真實油門";
 CM_ SG_ 821 THROTTLE_POS "巡航定速會用的油門";
 CM_ SG_ 906 ABS_UNDEF1 "ABS force";
 CM_ SG_ 906 SPEED_FL "used for car speed in dash board";
-CM_ SG_ 809 SHOW_ON_OFF_RAN "某狀態出現";
 CM_ SG_ 864 TCS_ON_FF "ON = 1, OFF =0";
