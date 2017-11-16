@@ -88,12 +88,11 @@ BO_ 1306 _SPEEDX: 8 XXX
  SG_ _GSPEED1 : 0|8@1+ (1,0) [0|255] "" XXX
 
 BO_ 1296 GAS: 8 XXX
- SG_ FUEL : 55|16@0+ (1,0) [0|65535] "" XXX
  SG_ FUEL_INJECT : 24|8@1+ (1,0) [0|255] "" XXX
+ SG_ FUEL : 55|16@0+ (1,0) [0|65535] "" XXX
 
 BO_ 790 ENGINE_DATA: 8 XXX
- SG_ ENG_TEMP : 56|2@1+ (1,0) [0|3] "" XXX
- SG_ ENG_RPM : 7|8@0+ (0.1,0) [0|65535] "" XXX
+ SG_ ENG_RPM : 1|15@1+ (0.1,0) [0|65535] "" XXX
 
 BO_ 1313 undefined: 8 XXX
 
